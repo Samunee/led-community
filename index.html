@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="LED Community Website" />
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="assets/img/Icon.png" href="assets/img/Icon.png" />
+    <link rel="icon" type="assets/img/icon.webp" href="assets/img/icon.webp" />
     <title>Lascar Engineering Developer</title>
   </head>
   <body>
@@ -43,7 +43,7 @@
     <!-- ABOUT US -->
 
     <section class="section__container choose__container" id="about">
-      <img class="choose__bg" src="assets/img/dot-bg.png" alt="bg" />
+      <img class="choose__bg" src="assets/img/dot-bg.webp" alt="bg" />
       <div class="choose__content">
         <h2
           class="section__header"
@@ -59,8 +59,8 @@
         >
           LED Community atau Lascar Engineering Developer Community berdiri pada
           tahun 2019. Merupakan suatu komunitas di SMK PGRI Telagasari yang
-          berfokus pada bidang Development <br />
-          Terdapat beberapa pembagian tim di komunitas ini yaitu:
+          berfokus pada bidang Development Terdapat beberapa pembagian tim di
+          komunitas ini yaitu:
         </p>
         <div class="choose__grid">
           <div
@@ -100,7 +100,7 @@
       </div>
       <div class="choose__image">
         <img
-          src="assets/img/about.svg"
+          src="assets/img/about.webp"
           data-aos="fade-left"
           data-aos-duration="3000"
           alt="image"
@@ -138,48 +138,52 @@
 
       <div class="craft__image" data-aos="fade-up" data-aos-duration="3000">
         <div class="craft__image__content">
-          <img src="assets/img/developer.png" alt="image" />
+          <img src="assets/img/developer.webp" alt="image" />
           <p>Division</p>
           <p><b>Frontend Developer</b></p>
         </div>
-        <a onclick="openModal('frontend')"
+        <span onclick="openModal('frontend')"
           ><i class="ri-arrow-right-up-line"></i
-        ></a>
+        ></span>
       </div>
 
       <!-- WEB DEVELOPER -->
 
       <div class="craft__image" data-aos="fade-up" data-aos-duration="3000">
         <div class="craft__image__content">
-          <img src="assets/img/developers.png" alt="image" />
+          <img src="assets/img/developers.webp" alt="image" />
           <p>Division</p>
           <p><b>Web Developer</b></p>
         </div>
-        <a onclick="openModal('web')"><i class="ri-arrow-right-up-line"></i></a>
+        <span onclick="openModal('web')"
+          ><i class="ri-arrow-right-up-line"></i
+        ></span>
       </div>
 
       <!-- UI/UX DESIGNER -->
 
       <div class="craft__image" data-aos="fade-up" data-aos-duration="3000">
         <div class="craft__image__content">
-          <img src="assets/img/designer.png" alt="image" />
+          <img src="assets/img/designer.webp" alt="image" />
           <p>Division</p>
           <p><b>UI/UX Designer</b></p>
         </div>
-        <a onclick="openModal('ui')"><i class="ri-arrow-right-up-line"></i></a>
+        <span onclick="openModal('ui')"
+          ><i class="ri-arrow-right-up-line"></i
+        ></span>
       </div>
 
       <!-- CREATIVE -->
 
       <div class="craft__image" data-aos="fade-up" data-aos-duration="3000">
         <div class="craft__image__content">
-          <img src="assets/img/creative.png" alt="image" />
+          <img src="assets/img/creative.webp" alt="image" />
           <p>Division</p>
           <p><b>Creative</b></p>
         </div>
-        <a onclick="openModal('creative')"
+        <span onclick="openModal('creative')"
           ><i class="ri-arrow-right-up-line"></i
-        ></a>
+        ></span>
       </div>
     </section>
 
@@ -189,14 +193,9 @@
     <div id="frontendModal" class="modal">
       <div class="modal-content animate__animated animate__fadeIn">
         <span onclick="closeModal('frontend')" class="close">&times;</span>
-        <h1>Frontend Developer</h1>
         <p>
-          <br />
-          Front-end developers bertanggung jawab untuk mengembangkan tampilan
-          dan interaksi pengguna pada website atau aplikasi, fokus pada aspek
-          visual dan fungsional yang dapat dilihat oleh pengguna akhir. Mereka
-          menggunakan bahasa pemrograman seperti HTML, CSS, dan JavaScript untuk
-          menciptakan antarmuka pengguna yang responsif dan menarik.
+          frontend developer bertanggung jawab untuk mengembangkan tampilan dan
+          interaksi pengguna pada website atau aplikasi.
         </p>
       </div>
     </div>
@@ -205,17 +204,9 @@
     <div id="webModal" class="modal">
       <div class="modal-content animate__animated animate__fadeIn">
         <span onclick="closeModal('web')" class="close">&times;</span>
-        <h1>Web Developer</h1>
         <p>
-          <br />
-          Seorang web developer bertanggung jawab untuk merancang, Web
-          developers, di sisi lain, berfokus pada pengembangan backend dari
-          sebuah website atau aplikasi. Mereka bekerja dengan server, database,
-          dan aplikasi logika untuk memastikan bahwa website atau aplikasi
-          berfungsi dengan lancar. Mereka dapat menggunakan berbagai bahasa
-          pemrograman seperti Python, Ruby, atau Java untuk membangun dan
-          memelihara infrastruktur teknis yang mendukung fungsi keseluruhan dari
-          sebuah proyek.
+          seorang web developer bertanggung jawab untuk merancang, berfokus pada
+          pengembangan backend dari sebuah website atau aplikasi.
         </p>
       </div>
     </div>
@@ -225,15 +216,10 @@
     <div id="uiModal" class="modal">
       <div class="modal-content animate__animated animate__fadeIn">
         <span onclick="closeModal('ui')" class="close">&times;</span>
-        <h1>UI/UX Designer</h1>
         <p>
-          <br />
-          UI designers, atau desainer antarmuka pengguna, bertanggung jawab
+          ui/ux designers, atau desainer antarmuka pengguna, bertanggung jawab
           untuk merancang elemen visual dari website atau aplikasi agar dapat
-          memberikan pengalaman pengguna yang optimal. Mereka memperhatikan
-          estetika, kegunaan, dan konsistensi desain, sering kali menggunakan
-          alat seperti Adobe XD atau Sketch untuk membuat prototipe desain dan
-          bekerja sama dengan tim pengembang untuk mengimplementasikannya.
+          memberikan pengalaman pengguna yang optimal.
         </p>
       </div>
     </div>
@@ -243,15 +229,9 @@
     <div id="creativeModal" class="modal">
       <div class="modal-content animate__animated animate__fadeIn">
         <span onclick="closeModal('creative')" class="close">&times;</span>
-        <h1>Creative</h1>
         <p>
-          <br />
-          Tim kreatif, di sisi lain, mungkin terdiri dari berbagai peran seperti
-          desainer grafis, penulis konten, dan spesialis pemasaran. Mereka
-          bekerja bersama untuk menghasilkan ide-ide kreatif dan konten yang
-          menarik untuk mempromosikan produk atau layanan. Tim kreatif dapat
-          terlibat dalam pengembangan merek, kampanye iklan, dan strategi
-          pemasaran secara keseluruhan.
+          Tim kreatif terdiri dari peran-peran seperti desainer grafis, penulis
+          konten, dan spesialis pemasaran.
         </p>
       </div>
     </div>
@@ -260,23 +240,23 @@
 
     <section class="section__container modern__container" id="services">
       <div class="modern__image">
-        <img src="assets/img/dot-bg.png" alt="bg" class="modern__bg" />
+        <img src="assets/img/dot-bg.webp" alt="bg" class="modern__bg" />
         <img
-          src="assets/img/ppdb.png"
+          src="assets/img/ppdb.webp"
           data-aos="fade-right"
           data-aos-duration="3000"
           alt="modern"
           class="modern__img-1"
         />
         <img
-          src="assets/img/about.svg"
+          src="assets/img/about.webp"
           data-aos="fade-down"
           data-aos-duration="3000"
           alt="modern"
           class="modern__img-2"
         />
         <img
-          src="assets/img/led.jpg"
+          src="assets/img/led.webp"
           data-aos="fade-up"
           data-aos-duration="3000"
           alt="modern"
@@ -1176,11 +1156,11 @@
     <footer class="footer">
       <div class="section__container footer__bar">
         <div class="footer__logo">
-          <h4><a href="#">LED Community</a></h4>
+          <p><small>LED Community</small></p>
           <p>© 2024 samunee. All right reserved</p>
         </div>
         <ul class="footer__nav">
-          <li class="footer__link"><a href="#">About</a></li>
+          <li class="footer__link"><a href="#about">About</a></li>
           <li class="footer__link"><a href="#">Partnership</a></li>
           <li class="footer__link"><a href="#">Privacy Policy</a></li>
         </ul>
