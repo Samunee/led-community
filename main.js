@@ -21,7 +21,6 @@ filterContainer.addEventListener("click", (event) => {
   }
 });
 
-
 function openModal(id) {
   document.getElementById(id + "Modal").style.display = "block";
 }
@@ -48,7 +47,6 @@ const scrollRevealOption = {
   duration: 1000,
 };
 
-// header container
 ScrollReveal().reveal(".header__container h1", {
   ...scrollRevealOption,
 });
