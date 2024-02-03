@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-    name="description"
-    content="LED Community Website">
+    <meta name="description" content="LED Community Website" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -1194,43 +1192,7 @@
 
     <!-- SCRIPT -->
 
-    <script>
-      // GALLERY FILTER (OUR TEAM)
-      const filterContainer = document.querySelector(".gallery-filter"),
-        galleryItems = document.querySelectorAll(".gallery-item");
-
-      filterContainer.addEventListener("click", (event) => {
-        if (event.target.classList.contains("filter-item")) {
-          filterContainer.querySelector(".active").classList.remove("active");
-          event.target.classList.add("active");
-          const filterValue = event.target.getAttribute("data-filter");
-          galleryItems.forEach((item) => {
-            if (item.classList.contains(filterValue) || filterValue === "all") {
-              item.classList.remove("hide");
-              item.classList.add("show");
-            } else {
-              item.classList.remove("show");
-              item.classList.add("hide");
-            }
-          });
-        }
-      });
-
-      // DIVISION MODAL
-
-      function openModal(id) {
-        document.getElementById(id + "Modal").style.display = "block";
-      }
-
-      function closeModal(id) {
-        document.getElementById(id + "Modal").style.display = "none";
-      }
-    </script>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
