@@ -1,4 +1,3 @@
-
 const filterContainer = document.querySelector(".gallery-filter"),
   galleryItems = document.querySelectorAll(".gallery-item");
 
