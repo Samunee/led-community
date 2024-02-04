@@ -33,6 +33,7 @@ navLinks.addEventListener("click", (e) => {
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
+
 function openModal(id) {
   document.getElementById(id + "Modal").style.display = "block";
 }
@@ -71,4 +72,8 @@ const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
   },
+});
+
+AOS.init({
+  duration: 1200,
 });
